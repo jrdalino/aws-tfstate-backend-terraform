@@ -1,3 +1,50 @@
+# IAM Role 
+output "aws_iam_role_arn" {
+  value       = aws_iam_role.this.arn
+  description = "Amazon Resource Name (ARN) specifying the role."
+}
+
+output "aws_iam_role_create_date" {
+  value       = aws_iam_role.this.create_date
+  description = "Creation date of the IAM role."
+}
+
+output "aws_iam_role_id" {
+  value       = aws_iam_role.this.id
+  description = "Name of the role."
+}
+
+output "aws_iam_role_name" {
+  value       = aws_iam_role.this.name
+  description = "Name of the role."
+}
+
+output "aws_iam_role_unique_id" {
+  value       = aws_iam_role.this.unique_id
+  description = "Stable and unique string identifying the role."
+}
+
+# IAM Role Policy
+output "aws_iam_role_policy_id" {
+  value       = aws_iam_role_policy.this.id
+  description = "The role policy ID, in the form of role_name:role_policy_name."
+}
+
+output "aws_iam_role_policy_name" {
+  value       = aws_iam_role_policy.this.name
+  description = "The name of the policy."
+}
+
+output "aws_iam_role_policy_policy" {
+  value       = aws_iam_role_policy.this.policy
+  description = "The policy document attached to the role."
+}
+
+output "aws_iam_role_policy_role" {
+  value       = aws_iam_role_policy.this.role
+  description = "The name of the role associated with the policy."
+}
+
 # S3 Bucket
 output "aws_s3_bucket_id" {
   value       = aws_s3_bucket.this.id
