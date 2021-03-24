@@ -8,6 +8,10 @@ namespace       = "bbsdm"
 bounded_context = "shared"
 environment     = "production"
 
+# IAM Role
+aws_iam_role_name        = "OrganizationAccountAccessRole"
+aws_iam_role_policy_name = "OrganizationAccountAccessRolePolicy"
+
 # S3 Bucket
 aws_s3_bucket_bucket = "623552185285-ap-southeast-1-terraform-state"
 
